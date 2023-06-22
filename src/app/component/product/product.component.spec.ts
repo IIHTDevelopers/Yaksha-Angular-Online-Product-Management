@@ -245,7 +245,7 @@ describe("ProductComponent", () => {
       expect(component.products.length).toBeGreaterThan(0);    
       expect(Array.isArray(component.products)).toBe(true);
     })    
-  });
+  
 
   it('should delete product by id', ()=>{  
     jest.spyOn(mockService, 'deleteProduct').mockReturnValue(of(product));
@@ -263,7 +263,7 @@ describe("ProductComponent", () => {
 
 });
 
-
+});
 
 
 
